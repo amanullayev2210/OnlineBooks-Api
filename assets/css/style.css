@@ -1,0 +1,417 @@
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/poppins-v22-latin-regular.woff2') format('woff2'); 
+  }
+  /* poppins-italic - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    src: url('/assets/fonts/poppins-v22-latin-italic.woff2') format('woff2'); 
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/poppins-v22-latin-500.woff2') format('woff2');
+  }
+  /* poppins-500italic - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    src: url('/assets/fonts/poppins-v22-latin-500italic.woff2') format('woff2');
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/fonts/poppins-v22-latin-600.woff2') format('woff2');
+  }
+  /* poppins-600italic - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 600;
+    src: url('/assets/fonts/poppins-v22-latin-600italic.woff2') format('woff2'); 
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/assets/fonts/poppins-v22-latin-700.woff2') format('woff2'); 
+  }
+  /* poppins-700italic - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 700;
+    src: url('/assets/fonts/poppins-v22-latin-700italic.woff2') format('woff2'); 
+  }
+  /* poppins-800 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/assets/fonts/poppins-v22-latin-800.woff2') format('woff2');
+  }
+  /* poppins-800italic - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    src: url('/assets/fonts/poppins-v22-latin-800italic.woff2') format('woff2'); 
+  }
+  /* poppins-900 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/assets/fonts/poppins-v22-latin-900.woff2') format('woff2');
+  }
+  /* poppins-900italic - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 900;
+    src: url('/assets/fonts/poppins-v22-latin-900italic.woff2') format('woff2');
+  }
+
+:root {
+    --bglight_color: #FFFFFF;
+    --bgdark-color: #202C36; 
+    --bgdark-color2: #1c2129;
+    --black-color: #111517;
+    --white-color: #FFFFFF;
+    --white-color2: #FAFAFA;
+    --silver-color: #848484;
+    --yelow-color: #FFD050;
+    --yelow-color2: #FFD050;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    --shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.3);
+    --fw-low: 300;
+    --fw-medium: 400;
+    --fw-high: 600;
+    --fw-max: 800;
+}
+
+.active  {
+    --bglight_color: #2B3844;
+    --white-color2: #202C36;
+    --white-color: #2B3844;
+    --black-color: #FFFFFF;
+    --silver-color: #FFFFFF;
+    --yelow-color2: #ADFF2F;
+    --shadow: 0 2px 6px rgba(200, 200, 200, 0.2);
+    --shadow-hover: 0 4px 12px rgba(220, 220, 220, 0.4);
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    background-color: var(--white-color2);
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-block: 0;
+}
+
+p {
+    margin-block: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header start */
+
+.header {
+  background-color: var(--bglight_color);
+}
+
+.header_wrapper {
+    padding-block: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_link {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black-color);
+    letter-spacing: 1px;
+}
+
+.header-link_imgs {
+    margin-right: 5px;
+}
+
+.header-link_span {
+    color: var(--yelow-color2);
+}
+
+.header_info {
+    max-width: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-info_mode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+    border: none;
+    background-color: transparent;
+    color: var(--black-color);
+}
+
+.header_infoMode_span {
+    color: var(--black-color);
+    transform: translate(1px, .5px);
+}
+
+/* form start */
+
+.form_wrapper {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.form_inp {
+    margin-right: 20px;
+    padding-block: 10px;
+    padding-inline: 15px;
+    width: 100%;
+    background: var(--bglight_color);
+    border-radius: 6px;
+    border: 0;
+    outline: none;
+}
+
+.form_inp::placeholder {
+    color: var(--black-color);
+}
+
+.form_select {
+    margin-right: 20px;
+    padding-block: 10px;
+    padding-inline: 15px;
+    max-width: 217px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--bglight_color);
+    color: var(--silver-color);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.form_button {
+    padding-block: 10px;
+    padding-inline: 15px;
+    max-width: 125px;
+    width: 100%;
+    background-color: var(--yelow-color2);
+    color: var(--bgdark-color);
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: 0;
+}
+
+/* hero start */
+
+.hero_wrapper {
+    padding-top: 48px;
+    padding-bottom: 27px;
+}
+
+.hero_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.hero_item {
+    max-width: 295px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.hero_item:hover {
+   box-shadow: var(--shadow-hover);
+}
+
+.hero-item_img {
+    width: 285px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.hero-item_tittle {
+    font-size: 19px;
+    color: var(--black-color);
+}
+
+.hero-item_author {
+    font-size: 16px;
+    color: var(--black-color);
+}
+
+.hero-item_wrapper_info {
+    margin-top: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.hero-item-info_span {
+    color: var(--black-color);
+}
+
+.hero-item-info_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.hero-item-info_two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.hero-item-info_last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.hero-item_link {
+    display: block;
+    margin-top: 6px;
+    padding-block: 10px;
+    padding-inline: 15px;
+    background-color: var(--yelow-color2);
+    color: var(--black-color);
+    border-radius: 6px;
+    text-align: center;
+}
+
+
+/* Responsive start */
+
+@media only screen and (max-width: 1024px) {
+    .hero_items {
+      column-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form_wrapper {
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+
+    .form_inp {
+      margin-right: 0;
+    }
+
+    .form_select {
+      margin-right: 0;
+      max-width: unset;
+    }
+
+    .form_button {
+      max-width: unset
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    .hero_items {
+      column-gap: unset;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero_item {
+      max-width: 100%;
+      text-align: center;
+    }
+    
+    .hero-item_img {
+      width: 100%;
+    }
+
+    .hero-item_tittle {
+      font-size: 21px;
+    }
+    
+    .hero-item_author {
+      font-size: 19px;
+    }
+    
+    .hero-item_wrapper_info {
+      justify-content: center;
+    }
+  }

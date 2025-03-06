@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/scripts/data.js" defer></script>
+    <script src="./assets/scripts/script.js" defer></script>
+    <title>OnlineBooks</title>
+    <link rel="shortcut icon" href="./assets/icons/book-icon.svg" type="image/x-icon">
+</head>
+<body id="body">
+
+    <!-- header section -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header_wrapper">
+                <a href="https://onlinebooks-c15.vercel.app" class="header_link">
+                    <img src="./assets/icons/book-icon.svg" class="header-link_imgs">Online<span class="header-link_span">Books</span>
+                </a>
+                <div class="header_info">
+                    <button class="header-info_mode" id="js-btn"><img src="./assets/icons/moon_light.svg" id="js-modeImg"> <span class="header_infoMode_span" id="js-mode_text">Dark mode</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- form section -->
+        <form id="form">
+            <div class="container">
+                <div class="form_wrapper">
+                    <input type="search" id="js-inp" class="form_inp" placeholder="Type...">
+                    <select class="form_select" id="js-select">
+                        <option value="sort" selected disabled>Sort</option>
+                        <option value="a-z">A to Z</option>
+                        <option value="z-a">Z to A</option>
+                        <option value="new-old">New to Old year</option>
+                        <option value="old-new">Old to New year</option>
+                        <option value="lot-less">Lot to Less page</option>
+                        <option value="less-lot">Less to Lot page</option>
+                    </select>                    
+                    <button type="submit" id="js-formbtn" class="form_button">Submit</button>
+                </div>  
+            </div>
+        </form>
+        <!-- hero section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero_wrapper">
+                    <ul class="hero_items" id="js-inner"></ul>
+                </div>
+            </div>
+        </section>
+        <!-- template section -->
+        <template id="js-template">
+            <li class="hero_item" id="js-item">
+                <img class="hero-item_img" id="js-img">
+                <h3 class="hero-item_tittle" id="js-tittle"></h3>
+                <h4 class="hero-item_author" id="js-author"></h4>
+                <div class="hero-item_wrapper_info" id="js-item-inner">
+                    <div class="hero-item-info_first">
+                        <img src="./assets/icons/year.svg"> <span id="js-item-year" class="hero-item-info_span"></span>
+                    </div>
+                    <div class="hero-item-info_two" >
+                        <img src="./assets/icons/pages.svg"> <span id="js-item-pages" class="hero-item-info_span"></span>
+                    </div>
+                    <div class="hero-item-info_last">
+                        <img src="./assets/icons/language.svg"> <span id="js-item-language" class="hero-item-info_span"></span>
+                    </div>
+                </div>
+                <a href="#" class="hero-item_link" id="js-info" target="_blank">More info</a>
+            </li>
+        </template>
+    </main>
+</body>
+</html>
