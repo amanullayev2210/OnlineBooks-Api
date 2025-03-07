@@ -252,7 +252,7 @@ a {
     border: none;
     border-radius: 5px;
     background-color: var(--bglight_color);
-    color: var(--silver-color);
+    color: var(--black-color);
     outline: 2px solid transparent;
     outline-offset: 2px;
 }
